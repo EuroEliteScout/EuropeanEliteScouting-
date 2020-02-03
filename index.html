@@ -61,6 +61,7 @@ body {
 	<ul>
 	  <li><a onclick="home()">Home</a></li>
 	  <li><a onclick="match()">Matches</a></li>
+	  <li><a onclick="scouts()">Scouts</a></li>
 	  <li><a onclick="contact()">Contact</a></li>
 	</ul>
 <br />
@@ -118,6 +119,17 @@ body {
 	</table>
 	<br /><br /><br /><br /><br /><br />
 </div>
+<div id="scouts" style="visibility: hidden;" align="center" class="main">
+	<h1>Scouts</h1>
+	<h5>
+	<br /><br />
+
+	Lewis Shepherd - A qualified PFSA scout and FA qualified coach, Lewis has been watching football since the age of 5. He is currently studying for a degree in football coaching and performance at the university of Chichester in England
+	<br /><br /><img src="assets/lewis.png" height=150px width=100px>
+	<br /><br />
+	And more to follow...
+	<br /><br /><br /><br />
+</div>
 <div id="contact" style="visibility: hidden;" align="center" class="main">
 	<h1>Contact</h1>
 	<h5>For any enquires, do not hesitate to get in touch. You can find us here. 
@@ -144,6 +156,10 @@ body {
  function home()
  {
 	document.getElementById("main").innerHTML= document.getElementById("home").innerHTML;
+ }
+ function scouts()
+ {
+	document.getElementById("main").innerHTML= document.getElementById("scouts").innerHTML;
  }
 </script>
 </html>
