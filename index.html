@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<title>European Scouting</title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+body {
+  background-image: url('assets/pitch1.jpg');
+}
+.main{
+	background-image: linear-gradient(to right, rgba(219, 160, 64,0.1), rgba(219, 160, 64,1)); /* Standard syntax (must be last) */
+	height:80%;
+	width:75%;
+	margin:0 auto;
+	font-family: 'MyWebFont', Arial, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+	
+	
+}
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('graduate/Graduate-Regular.ttf') format('truetype'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('graduate/Graduate-Regular.ttf') format('opentype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  
+   color: white;
+   text-align: center;
+}
+</style>
+<body>
+<!-- main content -->
+	<!-- Menu -->
+
+	<ul>
+	  <li><a onclick="home()">Home</a></li>
+	  <li><a onclick="match()">Matches</a></li>
+	  <li><a onclick="contact()">Contact</a></li>
+	</ul>
+<br />
+<br />
+<br />
+<br />
+<div id="main" align="center" class="main">
+	<h1>European Scouting</h1>
+	<h5>We are an independent scouting network who travel all across Europe watching games. 
+	<br /><br />
+	With professionally qualified scouts on the lookout, we are always looking for the next big star in Football. 
+	<br /><br />
+	From Champions League football under bright lights to sunny days in Spain, an EES scout will be in attendance. </h5>
+	<br /><br /><br /><br /><br /><br />
+</div>
+<div id="home" style="visibility: hidden;" align="center" class="main">
+	<h1>European Scouting</h1>
+	<h5>We are an independent scouting network who travel all across Europe watching games. 
+	<br /><br />
+	With professionally qualified scouts on the lookout, we are always looking for the next big star in Football. 
+	<br /><br />
+	From Champions League football under bright lights to sunny days in Spain, an EES scout will be in attendance. </h5>
+	<br /><br /><br /><br /><br /><br />
+</div>
+<div id="matches" style="visibility: hidden;" align="center" class="main">
+	<h1>Matches</h1>
+	<table>
+		<th>Bournemouth vs Brighton</th>
+		<th>3-1</th>
+		<th><img src="assets/Bournemouth.jpg" height="100px" width="150px" alt="pic"></th>
+		<tr>
+		<th>Manchester City vs Watford</th>
+		<th>6-0</th>
+		<th><img src="assets/ManCity.jpg" height="100px" width="150px" alt="pic"></th>
+		<tr>
+		<th>Enland vs Montenegro</th>
+		<th>7-0</th>
+		<th><img src="assets/England.jpg" alt="pic" height="100px" width="150px"></th>
+		<tr>
+		<th>Chelsea vs Burnley</th>
+		<th>2-2</th>
+		<th><img src="assets/Chelsea.jpg" alt="pic" height="100px" width="150px"></th>
+		<tr>
+		<th>Tenerife vs Lugo</th>
+		<th>0-0</th>
+		<th><img src="assets/Ten.jpg" alt="pic" height="100px" width="150px"></th>
+		<tr>
+		<th>Schalke vs RB Leipzig</th>
+		<th>0-1</th>
+		<th><img src="assets/Schalke.jpg" alt="pic" height="100px" width="150px"></th>
+		<tr>
+		<th>Bayer Leverkusen vs Werder Bremen</th>
+		<th>1-3</th>
+		<th><img src="assets/pitch1.jpg" alt="pic" height="100px" width="150px"></th>
+	</table>
+	<br /><br /><br /><br /><br /><br />
+</div>
+<div id="contact" style="visibility: hidden;" align="center" class="main">
+	<h1>Contact</h1>
+	<h5>For any enquires, do not hesitate to get in touch. You can find us here. 
+	<br /><br />
+
+	Twitter: @EuroEliteScout<br />
+	Instagram: @EuroEliteScout<br />
+	Email: EuropeanEliteScouting@Gmail.com<br /><br /></h5>
+	<br /><br /><br /><br />
+</div>
+<div class="footer">
+  <p>Footer</p>
+</div>
+</body>
+<script>
+ function match()
+ {
+	document.getElementById("main").innerHTML= document.getElementById("matches").innerHTML;
+ }
+ function contact()
+ {
+	document.getElementById("main").innerHTML= document.getElementById("contact").innerHTML;
+ }
+ function home()
+ {
+	document.getElementById("main").innerHTML= document.getElementById("home").innerHTML;
+ }
+</script>
+</html>
